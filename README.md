@@ -1,5 +1,6 @@
 # AWS Lambda Route53 Backup to S3
 Simple AWS Lambda function written in Python3 to backup Route53 records in a S3 bucket.
+
 The S3 bucket will have the following structure : S3Bucket/YYYY/<MM/DD/zoneName.export.json
 
 # Usage
@@ -48,6 +49,8 @@ The S3 bucket will have the following structure : S3Bucket/YYYY/<MM/DD/zoneName.
 - Add a Cloud Watch Event to schedule the function to run every day (for example). This step is not mandatory, but normally you might want your backups to run automatically
 
 # Warning
-This script only captures basic record sets. Shall you need to capture health checks or traffic policies, you might want to improve this script as it currently does not support it.
+This script only captures basic record sets.
+
+Shall you need to capture health checks or traffic policies, you might want to improve this script as it currently does not support it.
     
  
